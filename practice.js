@@ -20,13 +20,17 @@ function coll(fname,lname){
     return fullstring;
 }
 
+function aa(){
+    let mm=document.getElementById("bb").value;
+    document.getElementById("abc").innerText=mm;
+}
 
 function forloop(){
-    let a=9;
+   
 
     let month=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
 
-    for( let x=0;x<month.length;x++){
+    for( let x=3;x<month.length;x++){
         console.log(month[x]);
     }
 }
@@ -38,3 +42,24 @@ while(x<=10){
     x++
 }
 }
+
+
+function create(labelprint){
+    let label=document.createElement('label');
+    label.innerText=labelprint +'\n';
+    document.body.appendChild(label);
+}
+ function forof(){
+    let day=['sun','mon','tue','wed','thru','fri','sat'];
+
+    for(let x of day){
+        console.log(x);
+    }
+
+    let str='ravithakur';
+
+    for(let z of str){
+        console.log(z);
+        create(z);
+    }
+ }
